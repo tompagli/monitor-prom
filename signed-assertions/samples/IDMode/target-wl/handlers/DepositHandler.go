@@ -127,18 +127,6 @@ func DepositHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Create OpenSSL vkey using DASVID
-<<<<<<< HEAD
-	tmpvkey := dasvid.Assertion2vkey(original, 1)
-
-	// Verify /introspect response correctness.
-	hexresult := dasvid.VerifyHexProof(introspectrsp.ZKP, introspectrsp.Msg, tmpvkey)
-	if hexresult == false {
-		log.Fatal("Error verifying hexproof!!")
-	}
-	log.Println("Success verifying hexproof!!")
-
-=======
->>>>>>> 117dace (prometheus instrumentation)
 	// This PoC will consider that only DA-SVID with "subject_wl" in sub claim will be able request data
 	if dasvidclaims.Aud != "spiffe://example.org/subject_wl" {
 

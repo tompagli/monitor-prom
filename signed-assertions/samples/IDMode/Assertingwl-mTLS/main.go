@@ -29,11 +29,6 @@ import (
 
 	"github.com/hpe-usp-spire/signed-assertions/IDMode/Assertingwl-mTLS/controller"
 	"github.com/hpe-usp-spire/signed-assertions/IDMode/Assertingwl-mTLS/local"
-<<<<<<< HEAD
-)
-
-func main() {
-=======
 	"github.com/hpe-usp-spire/signed-assertions/IDMode/Assertingwl-mTLS/monitoring-prom"
 )
 
@@ -41,7 +36,6 @@ func main() {
 	go monitor.PrometheusAPI()
 	go monitor.UpdateMemoryUsage()
 	go monitor.UpdateCPUUsage()
->>>>>>> 117dace (prometheus instrumentation)
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 

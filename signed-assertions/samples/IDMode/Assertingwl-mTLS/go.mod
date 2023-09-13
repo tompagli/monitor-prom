@@ -6,10 +6,6 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/hpe-usp-spire/signed-assertions/IDMode/api-libs v0.0.0-00010101000000-000000000000
 	github.com/hpe-usp-spire/signed-assertions/poclib v0.0.0-00010101000000-000000000000
-<<<<<<< HEAD
-
-=======
->>>>>>> 117dace (prometheus instrumentation)
 	github.com/spiffe/go-spiffe/v2 v2.1.4
 )
 
@@ -18,15 +14,12 @@ replace github.com/hpe-usp-spire/signed-assertions/IDMode/api-libs => ./api-libs
 replace github.com/hpe-usp-spire/signed-assertions/poclib => ./poclib
 
 require (
-<<<<<<< HEAD
-=======
 	github.com/prometheus/client_golang v1.14.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	gitlab.com/msvechla/mux-prometheus v0.0.2
 )
 
 require (
->>>>>>> 117dace (prometheus instrumentation)
 	bitbucket.org/creachadair/shell v0.0.7 // indirect
 	cloud.google.com/go/compute v1.18.0 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
@@ -205,10 +198,6 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
-<<<<<<< HEAD
-	github.com/prometheus/client_golang v1.14.0 // indirect
-=======
->>>>>>> 117dace (prometheus instrumentation)
 	github.com/prometheus/client_model v0.3.0 // indirect
 	github.com/prometheus/common v0.37.0 // indirect
 	github.com/prometheus/procfs v0.8.0 // indirect

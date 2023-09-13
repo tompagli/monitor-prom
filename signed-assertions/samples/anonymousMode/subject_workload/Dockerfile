@@ -55,11 +55,7 @@ COPY --from=builder /build /build
 RUN apk add --no-cache bash
 
 # Export necessary port
-<<<<<<< HEAD
-EXPOSE 8080
-=======
 EXPOSE 8080 2110
->>>>>>> 117dace (prometheus instrumentation)
 
 # Command to run when starting the container
 CMD ["/build/main"]
