@@ -8,10 +8,7 @@ services:
       dockerfile: samples/IDMode/Assertingwl-mTLS/Dockerfile
     ports:
       - "8443:8443"
-<<<<<<< HEAD
-=======
       - "2113:2113"
->>>>>>> 117dace (prometheus instrumentation)
     volumes:
       - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
     networks:
@@ -23,10 +20,7 @@ services:
       dockerfile: samples/IDMode/subject_workload/Dockerfile
     ports:
       - "8080:8080"
-<<<<<<< HEAD
-=======
       - "2110:2110"
->>>>>>> 117dace (prometheus instrumentation)
     volumes:
       - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
     networks:
@@ -34,68 +28,16 @@ services:
 
   m-tier:
     build:
-<<<<<<< HEAD
-      context: ../../
-      dockerfile: samples/IDMode/m-tier/Dockerfile
-    ports:
-      - "8445:8445"
-=======
       context: ../..
       dockerfile: samples/IDMode/m-tier/Dockerfile
     ports:
       - "8445:8445"
       - "2115:2115"
->>>>>>> 117dace (prometheus instrumentation)
     volumes:
       - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
     networks:
       - my-network
   
-<<<<<<< HEAD
-  # m-tier2:
-  #   build:
-  #     context: ../..
-  #     dockerfile: samples/IDMode/m-tier2/Dockerfile
-  #   ports:
-  #     - "8446:8446"
-  #   volumes:
-  #     - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
-  #   networks:
-  #     - my-network
-  
-  # m-tier3:
-  #   build:
-  #     context: ../..
-  #     dockerfile: samples/IDMode/m-tier3/Dockerfile
-  #   ports:
-  #     - "8447:8447"
-  #   volumes:
-  #     - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
-  #   networks:
-  #     - my-network
-
-  # m-tier4:
-  #   build:
-  #     context: ../..
-  #     dockerfile: samples/IDMode/m-tier4/Dockerfile
-  #   ports:
-  #     - "8448:8448"
-  #   volumes:
-  #     - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
-  #   networks:
-  #     - my-network
-        
-  # m-tier5:
-  #   build:
-  #     context: ../..
-  #     dockerfile: samples/IDMode/m-tier5/Dockerfile
-  #   ports:
-  #     - "8449:8449"
-  #   volumes:
-  #     - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
-  #   networks:
-  #     - my-network
-=======
   m-tier2:
     build:
       context: ../..
@@ -143,7 +85,6 @@ services:
       - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
     networks:
       - my-network
->>>>>>> 117dace (prometheus instrumentation)
 
   target-wl:
     build:
@@ -151,10 +92,7 @@ services:
       dockerfile: samples/IDMode/target-wl/Dockerfile
     ports:
       - "8444:8444"
-<<<<<<< HEAD
-=======
       - "2114:2114"
->>>>>>> 117dace (prometheus instrumentation)
     volumes:
       - /tmp/spire-agent/public/api.sock:/tmp/spire-agent/public/api.sock
     networks:
