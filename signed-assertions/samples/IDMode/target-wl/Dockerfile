@@ -53,7 +53,11 @@ RUN chmod +x ./poclib/jwk2der.sh
 RUN apk add --no-cache bash
 
 # Export necessary port
+<<<<<<< HEAD
 EXPOSE 8444
+=======
+EXPOSE 8444 2114
+>>>>>>> 117dace (prometheus instrumentation)
 
 # Command to run when starting the container
 CMD ["/build/main"]

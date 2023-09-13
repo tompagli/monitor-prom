@@ -7,11 +7,19 @@ import (
 	alOps "github.com/hpe-usp-spire/signed-assertions/IDMode/api-libs/options"
 
 	"github.com/hpe-usp-spire/signed-assertions/IDMode/m-tier/options"
+<<<<<<< HEAD
+=======
+	"github.com/hpe-usp-spire/signed-assertions/IDMode/m-tier/monitoring-prom"
+>>>>>>> 117dace (prometheus instrumentation)
 )
 
 var Options *alOps.Options
 
 func init() {
+<<<<<<< HEAD
+=======
+	monitor.RegisterRequestSizeMetric()
+>>>>>>> 117dace (prometheus instrumentation)
 	log.Print("global init")
 
 	options, err := options.InitOptions()

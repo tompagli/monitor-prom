@@ -52,7 +52,11 @@ RUN apk add --no-cache bash
 LABEL "type"="assertingwl"
 
 # Export necessary port
+<<<<<<< HEAD
 EXPOSE 8443
+=======
+EXPOSE 8443 2113
+>>>>>>> 117dace (prometheus instrumentation)
 
 # Command to run when starting the container
 CMD ["/build/main"]

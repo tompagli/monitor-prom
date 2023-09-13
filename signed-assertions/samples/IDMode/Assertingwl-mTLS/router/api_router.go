@@ -5,6 +5,11 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+<<<<<<< HEAD
+=======
+	muxprom "gitlab.com/msvechla/mux-prometheus/pkg/middleware"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+>>>>>>> 117dace (prometheus instrumentation)
 	"github.com/hpe-usp-spire/signed-assertions/IDMode/Assertingwl-mTLS/handlers"
 )
 
@@ -12,6 +17,13 @@ func AssertingWLRouter(ctx context.Context) (*mux.Router, error) {
 
 	s := mux.NewRouter()
 
+<<<<<<< HEAD
+=======
+	instrumentation := muxprom.NewDefaultInstrumentation()
+	s.Use(instrumentation.Middleware)
+	s.Path("/metrics").Handler(promhttp.Handler())
+
+>>>>>>> 117dace (prometheus instrumentation)
 	s.HandleFunc("/mint", handlers.MintHandler).Methods("GET")
 	s.HandleFunc("/keys", handlers.KeysHandler).Methods("GET")
 	s.HandleFunc("/validate", handlers.ValidateDasvidHandler).Methods("GET")
